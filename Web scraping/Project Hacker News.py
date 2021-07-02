@@ -4,7 +4,8 @@ import pprint
 import requests
 from bs4 import BeautifulSoup
 
-res = requests.get("https://news.ycombinator.com/news")
+base_url= 'https://news.ycombinator.com/news?p={}'
+res = requests.get(base_url.format('1'))
 soup = BeautifulSoup(res.text, 'lxml')
 links = soup.select('.storylink')
 subtext = soup.select('.subtext')
