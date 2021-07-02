@@ -1,11 +1,10 @@
-person = input('enter your name:').lower()
+import pprint
 
-if person == 'sammy':
-    print('welcome sammy')
+import requests
+from bs4 import BeautifulSoup
 
-elif person == 'george':
-    print('welcome george')
+base_url= 'https://news.ycombinator.com/news?p={}'
+res = requests.get(base_url.format('99'))
+soup = BeautifulSoup(res.text, 'lxml')
 
-else:
-    # backslash says whatever comes after it includes in string
-    print('welcome, what\'s your name')
+print(soup)
