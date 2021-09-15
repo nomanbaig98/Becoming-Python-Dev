@@ -34,7 +34,7 @@ class SavingAccount(BankAccount):
 
 
 ba = BankAccount()
-ba.create_account('asad awan', 1850)
+ba.create_account('noman baig', 1850)
 
 ba.get_money(250)
 
