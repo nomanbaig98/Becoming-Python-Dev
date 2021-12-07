@@ -7,3 +7,6 @@ def fibonacci(n):
 
 for x in fibonacci(10):
     print(x)
+
+
+#teaching ameer hussain
