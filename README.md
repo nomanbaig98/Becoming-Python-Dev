@@ -1,1 +1,1 @@
-This repo include .py files while learning to become Python Developer
+This repo includes .py files while learning to become Python Developer
